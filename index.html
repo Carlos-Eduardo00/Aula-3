@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<hmtl lang="pt-BR">                             <!--A tag "Lang" serve para indicar a linguagem da página. Isso facilita para o plugin (google tradutor) tradizr a página.-->
+    <head>
+        <title>Formulário de contato</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <section>                                 <!-- Essa tag serve para indicar o que é determinada parte do código.-->  
+           <h2>Formulário de contato</h2>
+           <form id="contact-form">                                  <!--Essa tag serve para criar um formulário.-->
+            <div class="form-input">                                   <!--A tag "div" é a mesma coisa que a "section", porém, é uma divisão (é uma área em que vou dividir um elemento do outro).-->
+                <label>Nome</label>
+                <input name="name" type="text"/>                <!--Por no caso desse exemplo, não será usado nenhuma tag dentro da tag “input” (assim como é nas tags “form” e “div”), para deixar o código mais limpo, basta fechar a tag nela mesma, assim como mostra no exemplo do código. -->                                                       
+            </div>
+            <div class="form-input">                                  
+                <label>E-mail</label>
+                <input name="email" type="email"/>               <!--Podemos colocar o "type" como "Email", porque esse tipo vai informar para o navegador que esse formulário está esperando um e-mail nesse campo.-->                                                                
+            </div>
+            <div class="form-input">                                   
+                <label>Mensagem</label>
+                <textarea name="message"></textarea>               <!--A tag "textárea" serve para poder colocar mais texto, uma linha abaixo da outra, diferente do "input type="text"" que só pode preencher apenas uma linha até o limite dela.-->                                                                       
+            </div>
+            <input type="submit" value="Enviar">
+           </form>                 
+        </section>
+    <script type="text/javascript" src="script.js"></script>
+    </body>
+</hmtl>
